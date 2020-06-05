@@ -1,0 +1,54 @@
+Feature: Orange HRM Site>>> Add user
+
+  Scenario: Positive Scenerio first type    [90m# First.feature:3[0m
+    [32mGiven [0m[32mI have opened the site[0m            [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter correct [0m[32m[1mAdmin[0m[32m and [0m[32m[1madmin123[0m [90m# StepDefination.i_enter_correct_username_and_password(String,String)[0m
+    [32mThen [0m[32mI should get logged in[0m             [90m# StepDefination.i_should_get_logged_in()[0m
+
+  Scenario: Positive Scenerio second type [90m# First.feature:8[0m
+    [32mGiven [0m[32mI have opened the site[0m          [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter correct credentials[0m      [90m# StepDefination.tryingMethod(DataTable)[0m
+    [32mThen [0m[32mI should get logged in[0m           [90m# StepDefination.i_should_get_logged_in()[0m
+Feature: Oranage HRM negative
+
+  Scenario Outline: Negative tests                                [90m# Second.feature:5[0m
+    [36mGiven [0m[36mI have opened the site[0m
+    [36mWhen [0m[36mI enter wrong credentails i.e. <username> and <password>[0m
+    [36mThen [0m[36mI should stay in the login page[0m
+
+    Examples: 
+
+  Scenario Outline: Negative tests                                           [90m# Second.feature:12[0m
+    [32mGiven [0m[32mI have opened the site[0m                                             [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter wrong credentails i.e. [0m[32m[1mAdminIncorrect[0m[32m and [0m[32m[1madmin123incorrect[0m [90m# StepDefination.i_enter_incorrect_username_and_password(String,String)[0m
+    [32mThen [0m[32mI should stay in the login page[0m                                     [90m# StepDefination.i_should_stay_in_the_login_page()[0m
+
+  Scenario Outline: Negative tests                                  [90m# Second.feature:13[0m
+    [32mGiven [0m[32mI have opened the site[0m                                    [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter wrong credentails i.e. [0m[32m[1mAdminIncorrect[0m[32m and [0m[32m[1madmin123[0m [90m# StepDefination.i_enter_incorrect_username_and_password(String,String)[0m
+    [32mThen [0m[32mI should stay in the login page[0m                            [90m# StepDefination.i_should_stay_in_the_login_page()[0m
+
+  Scenario Outline: Negative tests                                  [90m# Second.feature:14[0m
+    [32mGiven [0m[32mI have opened the site[0m                                    [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter wrong credentails i.e. [0m[32m[1mAdmin[0m[32m and [0m[32m[1madmin123inccorect[0m [90m# StepDefination.i_enter_incorrect_username_and_password(String,String)[0m
+    [32mThen [0m[32mI should stay in the login page[0m                            [90m# StepDefination.i_should_stay_in_the_login_page()[0m
+
+  Scenario Outline: Negative tests                           [90m# Second.feature:15[0m
+    [32mGiven [0m[32mI have opened the site[0m                             [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter wrong credentails i.e. [0m[32m[1msaurab[0m[32m and [0m[32m[1msaurab123[0m [90m# StepDefination.i_enter_incorrect_username_and_password(String,String)[0m
+    [32mThen [0m[32mI should stay in the login page[0m                     [90m# StepDefination.i_should_stay_in_the_login_page()[0m
+
+  Scenario Outline: Negative tests                         [90m# Second.feature:16[0m
+    [32mGiven [0m[32mI have opened the site[0m                           [90m# StepDefination.i_have_opened_the_site()[0m
+    [32mWhen [0m[32mI enter wrong credentails i.e. [0m[32m[1mAdmin[0m[32m and [0m[32m[1madmin123[0m [90m# StepDefination.i_enter_incorrect_username_and_password(String,String)[0m
+    [31mThen [0m[31mI should stay in the login page[0m                   [90m# StepDefination.i_should_stay_in_the_login_page()[0m
+      [31mjava.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]
+      	at org.testng.Assert.fail(Assert.java:94)
+      	at org.testng.Assert.failNotEquals(Assert.java:513)
+      	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+      	at org.testng.Assert.assertEquals(Assert.java:116)
+      	at org.testng.Assert.assertEquals(Assert.java:190)
+      	at org.testng.Assert.assertEquals(Assert.java:200)
+      	at com.org.CucumberProject.StepDefination.i_should_stay_in_the_login_page(StepDefination.java:57)
+      	at ✽.Then I should stay in the login page(Second.feature:8)
+      [0m

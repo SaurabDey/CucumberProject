@@ -1,0 +1,441 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Positive Scenerio first type",
+        "description": "",
+        "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-first-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5982878179,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4035634949,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter correct Admin and admin123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 16
+                },
+                {
+                  "val": "admin123",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefination.i_enter_correct_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 573741942,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get logged in",
+            "match": {
+              "location": "StepDefination.i_should_get_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Positive Scenerio second type",
+        "description": "",
+        "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-second-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4131197095,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3796972213,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter correct credentials",
+            "match": {
+              "location": "StepDefination.tryingMethod(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 651534852,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get logged in",
+            "match": {
+              "location": "StepDefination.i_should_get_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Orange HRM Site\u003e\u003e\u003e Add user",
+    "description": "",
+    "id": "orange-hrm-site\u003e\u003e\u003e-add-user",
+    "keyword": "Feature",
+    "uri": "First.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Negative tests",
+        "description": "",
+        "id": "oranage-hrm-negative;negative-tests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3729502237,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3088874101,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter wrong credentails i.e. AdminIncorrect and admin123incorrect",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AdminIncorrect",
+                  "offset": 31
+                },
+                {
+                  "val": "admin123incorrect",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 558871092,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should stay in the login page",
+            "match": {
+              "location": "StepDefination.i_should_stay_in_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Negative tests",
+        "description": "",
+        "id": "oranage-hrm-negative;negative-tests;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4067488861,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2757559921,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter wrong credentails i.e. AdminIncorrect and admin123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AdminIncorrect",
+                  "offset": 31
+                },
+                {
+                  "val": "admin123",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 577748365,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should stay in the login page",
+            "match": {
+              "location": "StepDefination.i_should_stay_in_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Negative tests",
+        "description": "",
+        "id": "oranage-hrm-negative;negative-tests;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3788219583,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2920561663,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter wrong credentails i.e. Admin and admin123inccorect",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 31
+                },
+                {
+                  "val": "admin123inccorect",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 554234496,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should stay in the login page",
+            "match": {
+              "location": "StepDefination.i_should_stay_in_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Negative tests",
+        "description": "",
+        "id": "oranage-hrm-negative;negative-tests;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4507102891,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3150743132,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter wrong credentails i.e. saurab and saurab123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "saurab",
+                  "offset": 31
+                },
+                {
+                  "val": "saurab123",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 572098567,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should stay in the login page",
+            "match": {
+              "location": "StepDefination.i_should_stay_in_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Negative tests",
+        "description": "",
+        "id": "oranage-hrm-negative;negative-tests;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4158612289,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3673458714,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter wrong credentails i.e. Admin and admin123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 31
+                },
+                {
+                  "val": "admin123",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26920498,
+              "error_message": "java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.org.CucumberProject.StepDefination.i_should_stay_in_the_login_page(StepDefination.java:57)\r\n\tat ✽.Then I should stay in the login page(Second.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I should stay in the login page",
+            "match": {
+              "location": "StepDefination.i_should_stay_in_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Oranage HRM negative",
+    "description": "",
+    "id": "oranage-hrm-negative",
+    "keyword": "Feature",
+    "uri": "Second.feature"
+  }
+]
