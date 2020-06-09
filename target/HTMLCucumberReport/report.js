@@ -1,40 +1,59 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("First.feature");
 formatter.feature({
-  "line": 1,
+  "line": 2,
   "name": "Orange HRM Site\u003e\u003e\u003e Add user",
   "description": "",
   "id": "orange-hrm-site\u003e\u003e\u003e-add-user",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Regression"
+    }
+  ]
 });
-formatter.scenario({
-  "line": 3,
-  "name": "Positive Scenerio first type",
-  "description": "",
-  "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-first-type",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
+formatter.background({
   "line": 4,
-  "name": "I have opened the site",
-  "keyword": "Given "
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 5,
-  "name": "I enter correct Admin and admin123",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "I should get logged in",
-  "keyword": "Then "
+  "name": "I have opened the site",
+  "keyword": "Given "
 });
 formatter.match({
   "location": "StepDefination.i_have_opened_the_site()"
 });
 formatter.result({
-  "duration": 5982878179,
+  "duration": 6934795960,
   "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "Positive Scenerio first type",
+  "description": "",
+  "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-first-type",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "I enter correct Admin and admin123",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I should get logged in",
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
@@ -50,18 +69,37 @@ formatter.match({
   "location": "StepDefination.i_enter_correct_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 4035634949,
+  "duration": 4203983086,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_get_logged_in()"
 });
 formatter.result({
-  "duration": 573741942,
+  "duration": 599099269,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "I have opened the site",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefination.i_have_opened_the_site()"
+});
+formatter.result({
+  "duration": 3460940964,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 8,
+  "line": 14,
   "name": "Positive Scenerio second type",
   "description": "",
   "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-second-type",
@@ -69,12 +107,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "I have opened the site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 10,
+  "line": 15,
   "name": "I enter correct credentials",
   "rows": [
     {
@@ -82,42 +115,35 @@ formatter.step({
         "username",
         "password"
       ],
-      "line": 11
+      "line": 16
     },
     {
       "cells": [
         "Admin",
         "admin123"
       ],
-      "line": 12
+      "line": 17
     }
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 18,
   "name": "I should get logged in",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefination.i_have_opened_the_site()"
-});
-formatter.result({
-  "duration": 4131197095,
-  "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.tryingMethod(DataTable)"
 });
 formatter.result({
-  "duration": 3796972213,
+  "duration": 3875122342,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_get_logged_in()"
 });
 formatter.result({
-  "duration": 651534852,
+  "duration": 690699155,
   "status": "passed"
 });
 formatter.uri("Second.feature");
@@ -134,7 +160,13 @@ formatter.scenarioOutline({
   "description": "",
   "id": "oranage-hrm-negative;negative-tests",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
@@ -196,14 +228,6 @@ formatter.examples({
       ],
       "line": 15,
       "id": "oranage-hrm-negative;negative-tests;;5"
-    },
-    {
-      "cells": [
-        "Admin",
-        "admin123"
-      ],
-      "line": 16,
-      "id": "oranage-hrm-negative;negative-tests;;6"
     }
   ],
   "keyword": "Examples"
@@ -214,7 +238,13 @@ formatter.scenario({
   "description": "",
   "id": "oranage-hrm-negative;negative-tests;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
@@ -239,7 +269,7 @@ formatter.match({
   "location": "StepDefination.i_have_opened_the_site()"
 });
 formatter.result({
-  "duration": 3729502237,
+  "duration": 4191025125,
   "status": "passed"
 });
 formatter.match({
@@ -256,14 +286,14 @@ formatter.match({
   "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 3088874101,
+  "duration": 3176222186,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_stay_in_the_login_page()"
 });
 formatter.result({
-  "duration": 558871092,
+  "duration": 600381394,
   "status": "passed"
 });
 formatter.scenario({
@@ -272,7 +302,13 @@ formatter.scenario({
   "description": "",
   "id": "oranage-hrm-negative;negative-tests;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
@@ -297,7 +333,7 @@ formatter.match({
   "location": "StepDefination.i_have_opened_the_site()"
 });
 formatter.result({
-  "duration": 4067488861,
+  "duration": 4693709664,
   "status": "passed"
 });
 formatter.match({
@@ -314,14 +350,14 @@ formatter.match({
   "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 2757559921,
+  "duration": 3021610559,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_stay_in_the_login_page()"
 });
 formatter.result({
-  "duration": 577748365,
+  "duration": 694121439,
   "status": "passed"
 });
 formatter.scenario({
@@ -330,7 +366,13 @@ formatter.scenario({
   "description": "",
   "id": "oranage-hrm-negative;negative-tests;;4",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
@@ -355,7 +397,7 @@ formatter.match({
   "location": "StepDefination.i_have_opened_the_site()"
 });
 formatter.result({
-  "duration": 3788219583,
+  "duration": 3547602020,
   "status": "passed"
 });
 formatter.match({
@@ -372,14 +414,14 @@ formatter.match({
   "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 2920561663,
+  "duration": 3091629444,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_stay_in_the_login_page()"
 });
 formatter.result({
-  "duration": 554234496,
+  "duration": 564963872,
   "status": "passed"
 });
 formatter.scenario({
@@ -388,7 +430,13 @@ formatter.scenario({
   "description": "",
   "id": "oranage-hrm-negative;negative-tests;;5",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
@@ -413,7 +461,7 @@ formatter.match({
   "location": "StepDefination.i_have_opened_the_site()"
 });
 formatter.result({
-  "duration": 4507102891,
+  "duration": 3480458166,
   "status": "passed"
 });
 formatter.match({
@@ -430,73 +478,14 @@ formatter.match({
   "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 3150743132,
+  "duration": 2516879054,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.i_should_stay_in_the_login_page()"
 });
 formatter.result({
-  "duration": 572098567,
+  "duration": 548830774,
   "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "Negative tests",
-  "description": "",
-  "id": "oranage-hrm-negative;negative-tests;;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 6,
-  "name": "I have opened the site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "I enter wrong credentails i.e. Admin and admin123",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "I should stay in the login page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefination.i_have_opened_the_site()"
-});
-formatter.result({
-  "duration": 4158612289,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Admin",
-      "offset": 31
-    },
-    {
-      "val": "admin123",
-      "offset": 41
-    }
-  ],
-  "location": "StepDefination.i_enter_incorrect_username_and_password(String,String)"
-});
-formatter.result({
-  "duration": 3673458714,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefination.i_should_stay_in_the_login_page()"
-});
-formatter.result({
-  "duration": 26920498,
-  "error_message": "java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials] but found [https://opensource-demo.orangehrmlive.com/index.php/dashboard]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.org.CucumberProject.StepDefination.i_should_stay_in_the_login_page(StepDefination.java:57)\r\n\tat ✽.Then I should stay in the login page(Second.feature:8)\r\n",
-  "status": "failed"
 });
 });

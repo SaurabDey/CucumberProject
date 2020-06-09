@@ -1,7 +1,8 @@
 
 Feature: Oranage HRM negative
-
-
+   
+   
+@Regression
 Scenario Outline: Negative tests
     Given I have opened the site
     When I enter wrong credentails i.e. <username> and <password>
@@ -13,5 +14,4 @@ Scenario Outline: Negative tests
       | AdminIncorrect | admin123          |
       | Admin          | admin123inccorect |
       | saurab         | saurab123         |
-      | Admin          | admin123          |
 
