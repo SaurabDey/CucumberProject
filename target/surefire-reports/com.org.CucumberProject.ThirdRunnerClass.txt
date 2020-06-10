@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.org.CucumberProject.ThirdRunnerClass
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.204 sec - in com.org.CucumberProject.ThirdRunnerClass

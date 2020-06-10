@@ -11,12 +11,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		         features = "featureFolder", 
+		         features = "featureFolder/Third.feature", 
 		         glue = "com.org.CucumberProject",
 		         plugin  = {"pretty:STDOUT","html:target/HTMLCucumberReport","json:target/Cucumber.json"},
 		         monochrome=true
 		)
-public class RunnerClass
+public class ThirdRunnerClass
 {
 
 	/*

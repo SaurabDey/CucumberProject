@@ -1,15 +1,13 @@
 package com.org.CucumberProject;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
+
+import com.org.CucumberProject.common.CommonUtill;
+import com.org.CucumberProject.common.HooksClass;
+import com.org.CucumberProject.pages.LoginClassPOM;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -33,14 +31,14 @@ public class StepDefination
 	@When("^I enter correct (\\w+) and (\\w+)$")
 	public void i_enter_correct_username_and_password(String x, String y) throws Throwable {
 
-		LoginClass login=new LoginClass(driver);
+		LoginClassPOM login=new LoginClassPOM(driver);
 		login.logWithParameter(x, y);
 	}
 	@When("I enter correct credentials")
 	public void tryingMethod(DataTable data) throws Throwable {
 		 List<List<String>> values=data.raw();
 		 
-		LoginClass login=new LoginClass(driver);
+		 LoginClassPOM login=new LoginClassPOM(driver);
 		login.logWithParameter(values.get(1).get(0), values.get(1).get(1));
 	}
 
@@ -60,7 +58,7 @@ public class StepDefination
 	@When("I enter wrong credentails i.e. (\\w+) and (\\w+)")
 	public void i_enter_incorrect_username_and_password(String a, String b) throws Throwable {
        
-		LoginClass login=new LoginClass(driver);
+		LoginClassPOM login=new LoginClassPOM(driver);
 		login.logWithParameter(a, b);
 	}
 	
@@ -68,14 +66,8 @@ public class StepDefination
 	@Given("I am having some prerequisite")
 	public void pre()
 	{
-		RuntimeMXBean runtimeBean = ManagementFactory.getRuntimeMXBean();
-		 
-        Map<String, String> systemProperties = runtimeBean.getSystemProperties();
- 
-        String key="os.name";
-            String value = systemProperties.get(key);
-            System.out.printf("::::::::::::::[%s] = %s.\n", key, value);
-        
+	
+        CommonUtill.getSystemInfo();
 	}
 
 }

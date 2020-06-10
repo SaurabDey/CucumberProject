@@ -1,9 +1,11 @@
-package com.org.CucumberProject;
+package com.org.CucumberProject.common;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.management.ManagementFactory;
+import java.lang.management.RuntimeMXBean;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -99,5 +101,16 @@ public class CommonUtill {
 		}
 		
 		return dataDB;
+	}
+	
+	public static void getSystemInfo()
+	{
+		RuntimeMXBean runtimeBean = ManagementFactory.getRuntimeMXBean();
+		 
+        Map<String, String> systemProperties = runtimeBean.getSystemProperties();
+ 
+        String key="os.name";
+            String value = systemProperties.get(key);
+            System.out.printf("::::::::::::::[%s] = %s.\n", key, value);
 	}
 }

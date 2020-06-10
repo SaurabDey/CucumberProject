@@ -1,4 +1,4 @@
-package com.org.CucumberProject;
+package com.org.CucumberProject.pages;
 
 import java.util.List;
 import java.util.Map;
@@ -9,8 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginClass {
-	static Logger log= Logger.getLogger(LoginClass.class);
+import com.org.CucumberProject.common.CommonUtill;
+
+public class LoginClassPOM {
+	static Logger log= Logger.getLogger(LoginClassPOM.class);
 	
 	@FindBy(id= "txtUsername")
 	WebElement locatorusername;
@@ -22,7 +24,7 @@ public class LoginClass {
 	WebElement locatorLoginbutn;
 	
 	WebDriver driver ;
-	public LoginClass(WebDriver driver) 
+	public LoginClassPOM(WebDriver driver) 
 	{
 		this.driver= driver;
 		PageFactory.initElements(driver, this);

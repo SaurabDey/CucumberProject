@@ -11,32 +11,66 @@
         "steps": [
           {
             "result": {
-              "duration": 6934795960,
+              "duration": 308396830,
               "status": "passed"
             },
             "line": 5,
-            "name": "I have opened the site",
+            "name": "I am having some prerequisite",
             "match": {
-              "location": "StepDefination.i_have_opened_the_site()"
+              "location": "StepDefination.pre()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 4155341571,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
         "line": 9,
         "name": "Positive Scenerio first type",
         "description": "",
         "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-first-type",
+        "after": [
+          {
+            "result": {
+              "duration": 545434354,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4203983086,
+              "duration": 55423,
               "status": "passed"
             },
             "line": 10,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3595007390,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "I enter correct Admin and admin123",
             "match": {
               "arguments": [
@@ -55,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 599099269,
+              "duration": 29064373,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "I should get logged in",
             "match": {
               "location": "StepDefination.i_should_get_logged_in()"
@@ -70,77 +104,6 @@
           {
             "line": 8,
             "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3460940964,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have opened the site",
-            "match": {
-              "location": "StepDefination.i_have_opened_the_site()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Positive Scenerio second type",
-        "description": "",
-        "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-second-type",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3875122342,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I enter correct credentials",
-            "match": {
-              "location": "StepDefination.tryingMethod(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 16
-              },
-              {
-                "cells": [
-                  "Admin",
-                  "admin123"
-                ],
-                "line": 17
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 690699155,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should get logged in",
-            "match": {
-              "location": "StepDefination.i_should_get_logged_in()"
-            },
-            "keyword": "Then "
           }
         ]
       }
@@ -161,19 +124,41 @@
     "line": 2,
     "elements": [
       {
-        "line": 12,
+        "before": [
+          {
+            "result": {
+              "duration": 3839899006,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
+        "line": 13,
         "name": "Negative tests",
         "description": "",
         "id": "oranage-hrm-negative;negative-tests;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 547947286,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4191025125,
+              "duration": 59939,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I have opened the site",
             "match": {
               "location": "StepDefination.i_have_opened_the_site()"
@@ -182,10 +167,10 @@
           },
           {
             "result": {
-              "duration": 3176222186,
+              "duration": 3022283849,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I enter wrong credentails i.e. AdminIncorrect and admin123incorrect",
             "match": {
               "arguments": [
@@ -208,10 +193,10 @@
           },
           {
             "result": {
-              "duration": 600381394,
+              "duration": 31270219,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I should stay in the login page",
             "match": {
               "location": "StepDefination.i_should_stay_in_the_login_page()"
@@ -221,25 +206,47 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 5,
             "name": "@Regression"
           }
         ]
       },
       {
-        "line": 13,
+        "before": [
+          {
+            "result": {
+              "duration": 3741949667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
+        "line": 14,
         "name": "Negative tests",
         "description": "",
         "id": "oranage-hrm-negative;negative-tests;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 550716397,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4693709664,
+              "duration": 82519,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I have opened the site",
             "match": {
               "location": "StepDefination.i_have_opened_the_site()"
@@ -248,10 +255,10 @@
           },
           {
             "result": {
-              "duration": 3021610559,
+              "duration": 3458572132,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I enter wrong credentails i.e. AdminIncorrect and admin123",
             "match": {
               "arguments": [
@@ -274,10 +281,10 @@
           },
           {
             "result": {
-              "duration": 694121439,
+              "duration": 57168898,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I should stay in the login page",
             "match": {
               "location": "StepDefination.i_should_stay_in_the_login_page()"
@@ -287,25 +294,47 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 5,
             "name": "@Regression"
           }
         ]
       },
       {
-        "line": 14,
+        "before": [
+          {
+            "result": {
+              "duration": 3351918876,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
+        "line": 15,
         "name": "Negative tests",
         "description": "",
         "id": "oranage-hrm-negative;negative-tests;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 545563265,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3547602020,
+              "duration": 73898,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I have opened the site",
             "match": {
               "location": "StepDefination.i_have_opened_the_site()"
@@ -314,10 +343,10 @@
           },
           {
             "result": {
-              "duration": 3091629444,
+              "duration": 2905787421,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I enter wrong credentails i.e. Admin and admin123inccorect",
             "match": {
               "arguments": [
@@ -340,10 +369,10 @@
           },
           {
             "result": {
-              "duration": 564963872,
+              "duration": 38092619,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I should stay in the login page",
             "match": {
               "location": "StepDefination.i_should_stay_in_the_login_page()"
@@ -353,25 +382,47 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 5,
             "name": "@Regression"
           }
         ]
       },
       {
-        "line": 15,
+        "before": [
+          {
+            "result": {
+              "duration": 3780176123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
+        "line": 16,
         "name": "Negative tests",
         "description": "",
         "id": "oranage-hrm-negative;negative-tests;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 530704902,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3480458166,
+              "duration": 67329,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I have opened the site",
             "match": {
               "location": "StepDefination.i_have_opened_the_site()"
@@ -380,10 +431,10 @@
           },
           {
             "result": {
-              "duration": 2516879054,
+              "duration": 2646941867,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I enter wrong credentails i.e. saurab and saurab123",
             "match": {
               "arguments": [
@@ -406,10 +457,10 @@
           },
           {
             "result": {
-              "duration": 548830774,
+              "duration": 32704245,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I should stay in the login page",
             "match": {
               "location": "StepDefination.i_should_stay_in_the_login_page()"
@@ -419,7 +470,7 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 5,
             "name": "@Regression"
           }
         ]
@@ -430,5 +481,126 @@
     "id": "oranage-hrm-negative",
     "keyword": "Feature",
     "uri": "Second.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 425733,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am having some prerequisite",
+            "match": {
+              "location": "StepDefination.pre()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4412202562,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.b()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Positive Scenerio second type",
+        "description": "",
+        "id": "orange-hrm-site\u003e\u003e\u003e-add-user;positive-scenerio-second-type",
+        "after": [
+          {
+            "result": {
+              "duration": 527394286,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.a()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48444,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have opened the site",
+            "match": {
+              "location": "StepDefination.i_have_opened_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3724423187,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter correct credentials",
+            "match": {
+              "location": "StepDefination.tryingMethod(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98088924,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should get logged in",
+            "match": {
+              "location": "StepDefination.i_should_get_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Orange HRM Site\u003e\u003e\u003e Add user",
+    "description": "",
+    "id": "orange-hrm-site\u003e\u003e\u003e-add-user",
+    "keyword": "Feature",
+    "uri": "Third.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Regression"
+      }
+    ]
   }
 ]

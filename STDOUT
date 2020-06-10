@@ -1,24 +1,18 @@
 @Regression
 Feature: Orange HRM Site>>> Add user
 
-  Background:                    # First.feature:4
-    Given I have opened the site # StepDefination.i_have_opened_the_site()
+  Background:                           # First.feature:4
+    Given I am having some prerequisite # StepDefination.pre()
 
   @Sanity
   Scenario: Positive Scenerio first type    # First.feature:9
+    Given I have opened the site            # StepDefination.i_have_opened_the_site()
     When I enter correct Admin and admin123 # StepDefination.i_enter_correct_username_and_password(String,String)
     Then I should get logged in             # StepDefination.i_should_get_logged_in()
-
-  Background:                    # First.feature:4
-    Given I have opened the site # StepDefination.i_have_opened_the_site()
-
-  Scenario: Positive Scenerio second type # First.feature:14
-    When I enter correct credentials      # StepDefination.tryingMethod(DataTable)
-    Then I should get logged in           # StepDefination.i_should_get_logged_in()
 Feature: Oranage HRM negative
 
   @Regression
-  Scenario Outline: Negative tests                                # Second.feature:5
+  Scenario Outline: Negative tests                                # Second.feature:6
     Given I have opened the site
     When I enter wrong credentails i.e. <username> and <password>
     Then I should stay in the login page
@@ -26,25 +20,35 @@ Feature: Oranage HRM negative
     Examples: 
 
   @Regression
-  Scenario Outline: Negative tests                                           # Second.feature:12
+  Scenario Outline: Negative tests                                           # Second.feature:13
     Given I have opened the site                                             # StepDefination.i_have_opened_the_site()
     When I enter wrong credentails i.e. AdminIncorrect and admin123incorrect # StepDefination.i_enter_incorrect_username_and_password(String,String)
     Then I should stay in the login page                                     # StepDefination.i_should_stay_in_the_login_page()
 
   @Regression
-  Scenario Outline: Negative tests                                  # Second.feature:13
+  Scenario Outline: Negative tests                                  # Second.feature:14
     Given I have opened the site                                    # StepDefination.i_have_opened_the_site()
     When I enter wrong credentails i.e. AdminIncorrect and admin123 # StepDefination.i_enter_incorrect_username_and_password(String,String)
     Then I should stay in the login page                            # StepDefination.i_should_stay_in_the_login_page()
 
   @Regression
-  Scenario Outline: Negative tests                                  # Second.feature:14
+  Scenario Outline: Negative tests                                  # Second.feature:15
     Given I have opened the site                                    # StepDefination.i_have_opened_the_site()
     When I enter wrong credentails i.e. Admin and admin123inccorect # StepDefination.i_enter_incorrect_username_and_password(String,String)
     Then I should stay in the login page                            # StepDefination.i_should_stay_in_the_login_page()
 
   @Regression
-  Scenario Outline: Negative tests                           # Second.feature:15
+  Scenario Outline: Negative tests                           # Second.feature:16
     Given I have opened the site                             # StepDefination.i_have_opened_the_site()
     When I enter wrong credentails i.e. saurab and saurab123 # StepDefination.i_enter_incorrect_username_and_password(String,String)
     Then I should stay in the login page                     # StepDefination.i_should_stay_in_the_login_page()
+@Regression
+Feature: Orange HRM Site>>> Add user
+
+  Background:                           # Third.feature:4
+    Given I am having some prerequisite # StepDefination.pre()
+
+  Scenario: Positive Scenerio second type # Third.feature:7
+    Given I have opened the site          # StepDefination.i_have_opened_the_site()
+    When I enter correct credentials      # StepDefination.tryingMethod(DataTable)
+    Then I should get logged in           # StepDefination.i_should_get_logged_in()
